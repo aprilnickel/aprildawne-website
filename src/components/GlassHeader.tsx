@@ -4,6 +4,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const sectionIds = [
+] as const;
+
 export default function GlassHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,7 +26,7 @@ export default function GlassHeader() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-          {["experience", "skills", "projects", "awards", "education"].map(
+          {sectionIds.map(
             (item, index) => (
               <motion.a
                 key={item}
@@ -71,7 +74,7 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "skills", "projects", "awards", "education"].map(
+              {sectionIds.map(
                 (item, index) => (
                   <motion.a
                     key={item}

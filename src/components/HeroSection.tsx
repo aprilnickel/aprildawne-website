@@ -1,7 +1,8 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import MotionWrapper from "./MotionWrapper";
+import GithubIcon from "./icons/GithubIcon";
+import LinkedinIcon from "./icons/LinkedInIcon";
 
 export default function HeroSection() {
   const containerVariants = {
@@ -9,8 +10,7 @@ export default function HeroSection() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
+        duration: 0.5,
       },
     },
   };
@@ -35,68 +35,53 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          <div className="text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <motion.h1
               className="text-4xl font-bold mb-2"
               variants={childVariants}
             >
-              {personalInfo.name}{" "}
-              <span className="inline-block animate-pulse">✨</span>
+              {personalInfo.name}
             </motion.h1>
 
-            <motion.p
-              className="text-xl text-muted-foreground mb-6"
+            {personalInfo.jobTitle &&<motion.p
+              className="text-xl text-muted-foreground mb-2"
               variants={childVariants}
             >
-              Software Engineer 👨‍💻
-            </motion.p>
+              {personalInfo.jobTitle}
+            </motion.p>}
+
+            {personalInfo.location && <motion.div
+              className="flex items-center text-sm text-muted-foreground"
+              variants={childVariants}
+              whileHover={{ scale: 1.05, color: "#4b5563" }}
+            >
+              <MapPin className="h-4 w-4 mr-2" />
+              {personalInfo.location}
+            </motion.div>}
 
             <motion.div
-              className="flex flex-col gap-2 items-center md:items-start"
-              variants={containerVariants}
+              className="flex gap-2 items-center md:items-start mt-4"
+              variants={childVariants}
             >
-              <motion.div
-                className="flex items-center text-sm text-muted-foreground"
-                variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
-              >
-                <MapPin className="h-4 w-4 mr-2" />
-                📍 {personalInfo.location}
-              </motion.div>
-
-              <motion.a
-                href={`mailto:${personalInfo.email}`}
-                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-                variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
-              >
-                <Mail className="h-4 w-4 mr-2" />
-                ✉️ {personalInfo.email}
-              </motion.a>
-
-              <motion.a
+              {personalInfo.github && <motion.a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-                variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Github className="h-4 w-4 mr-2" />
-                🌟 GitHub
-              </motion.a>
+                <GithubIcon className="h-6 w-6" />
+              </motion.a>}
 
-              <motion.a
+              {personalInfo.linkedin && <motion.a
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-                variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Linkedin className="h-4 w-4 mr-2" />
-                🔗 LinkedIn
-              </motion.a>
+                <LinkedinIcon className="h-6 w-6" />
+              </motion.a>}
             </motion.div>
           </div>
 
@@ -118,14 +103,18 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        <MotionWrapper>
+        <motion.div
+          variants={childVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
               {personalInfo.heroDescription}
             </p>
           </div>
-        </MotionWrapper>
+        </motion.div>
       </div>
     </section>
   );

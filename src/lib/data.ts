@@ -1,12 +1,13 @@
 export const personalInfo = {
-  name: "Lorem Ipsum",
-  location: "Dolor Sit Amet",
-  email: "lorem@ipsum.com",
-  github: "https://github.com/loremipsum",
-  linkedin: "https://linkedin.com/in/loremipsum",
-  profilePicture: "/profile.jpeg",
+  name: "April D. Nickel",
+  jobTitle: "Software Engineer 👩‍💻",
+  location: "Vancouver, BC, Canada",
+  // email: "lorem@ipsum.com",
+  github: "https://github.com/aprilnickel",
+  linkedin: "https://linkedin.com/in/april-nickel",
+  profilePicture: "/april-headshot.png",
   heroDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Hey, I'm April! 👋 I'm a senior full stack engineer with 7 years of experience in Ruby on Rails-based SaaS development. I strongly value: people above solutions, continuous improvement & growth, collaboration & mentorship, authenticity, listening, and having fun!",
 };
 
 export const workExperience = [

@@ -6,9 +6,11 @@ import Footer from "@/components/Footer";
 ---
 
 <Layout>
-  <GlassHeader client:only="react" />
-  <main class="min-h-screen">
-    <HeroSection client:only="react" />
-  </main>
-  <Footer client:only="react" />
+  <div class="flex min-h-screen flex-col">
+    <GlassHeader client:only="react" />
+    <main class="flex-1">
+      <HeroSection client:only="react" />
+    </main>
+    <Footer client:only="react" />
+  </div>
 </Layout>

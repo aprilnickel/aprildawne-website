@@ -53,7 +53,7 @@ export default function HeroSection() {
             {personalInfo.location && <motion.div
               className="flex items-center text-sm text-muted-foreground"
               variants={childVariants}
-              whileHover={{ scale: 1.05, color: "#4b5563" }}
+              whileHover={{ scale: 1.05 }}
             >
               <MapPin className="h-4 w-4 mr-2" />
               {personalInfo.location}
@@ -68,7 +68,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
+                whileHover={{ scale: 1.05 }}
               >
                 <GithubIcon className="h-6 w-6" />
               </motion.a>}
@@ -78,7 +78,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
+                whileHover={{ scale: 1.05 }}
               >
                 <LinkedinIcon className="h-6 w-6" />
               </motion.a>}

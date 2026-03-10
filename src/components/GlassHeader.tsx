@@ -25,7 +25,7 @@ export default function GlassHeader() {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        {/* <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {sectionIds.map(
             (item, index) => (
               <motion.a
@@ -46,25 +46,25 @@ export default function GlassHeader() {
               </motion.a>
             )
           )}
-        </nav>
+        </nav> */}
 
         <div className="flex items-center space-x-2">
           <ThemeToggle />
 
           {/* Mobile Menu Button */}
-          <motion.button
+          {/* <motion.button
             className="md:hidden p-2 text-foreground"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             whileTap={{ scale: 0.95 }}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </motion.button>
+          </motion.button> */}
         </div>
       </div>
 
       {/* Mobile Navigation */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {isMenuOpen && (
           <motion.div
             className="md:hidden py-4 px-4 border-t border-border/10 backdrop-blur-md backdrop-filter bg-background/80 dark:bg-background/40"
@@ -97,7 +97,7 @@ export default function GlassHeader() {
             </nav>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </header>
   );
 }

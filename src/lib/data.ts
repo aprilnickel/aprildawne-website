@@ -5,6 +5,8 @@ export const personalInfo = {
   // email: "lorem@ipsum.com",
   github: "https://github.com/aprilnickel",
   linkedin: "https://linkedin.com/in/april-nickel",
+  website: "https://aprildawne.com",
+  websiteText: "aprildawne.com",
   profilePicture: "/april-headshot.png",
   heroDescription:
     "Hey, I'm April! 👋 I'm a senior full stack engineer with 7 years of experience in Ruby on Rails-based SaaS development. I strongly value: people above solutions, continuous improvement & growth, collaboration & mentorship, authenticity, listening, and having fun!",

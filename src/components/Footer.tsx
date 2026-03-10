@@ -43,6 +43,10 @@ export default function Footer() {
             >
               ❤️
             </motion.span>
+            {" "}by{" "}
+            <a href={personalInfo.website} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              {personalInfo.websiteText}
+            </a>
           </motion.p>
         </motion.div>
       </div>

@@ -2,7 +2,7 @@ import { personalInfo } from "@/lib/data";
 import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import GithubIcon from "./icons/GithubIcon";
-import LinkedinIcon from "./icons/LinkedInIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
 
 export default function HeroSection() {
   const containerVariants = {

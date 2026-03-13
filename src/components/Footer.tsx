@@ -49,6 +49,26 @@ export default function Footer() {
             </a>
           </motion.p>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <motion.p
+            className="text-sm text-muted-foreground mt-6 text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Pssst... are you here about sourdough? I've moved some things around, check out my sourdough site here:{" "}
+            <a href="http://sourdough.madebyapril.ca" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              sourdough.madebyapril.ca
+            </a>
+          </motion.p>
+        </motion.div>
       </div>
     </footer>
   );

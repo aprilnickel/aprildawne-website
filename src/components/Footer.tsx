@@ -44,8 +44,10 @@ export default function Footer() {
               ❤️
             </motion.span>
             {" "}by{" "}
-            <a href={personalInfo.website} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-              {personalInfo.websiteText}
+            <a href={personalInfo.website} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors underline-hover-link group">
+              <span className="underline-hover-link-span">
+                {personalInfo.websiteText}
+              </span>
             </a>
           </motion.p>
         </motion.div>
@@ -64,8 +66,10 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             Pssst... are you here about sourdough? I've moved some things around, check out my sourdough site here:{" "}
-            <a href="http://sourdough.madebyapril.ca" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
-              sourdough.madebyapril.ca
+            <a href="http://sourdough.madebyapril.ca" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors underline-hover-link group">
+              <span className="underline-hover-link-span">
+                sourdough.madebyapril.ca
+              </span>
             </a>
           </motion.p>
         </motion.div>

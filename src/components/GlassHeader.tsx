@@ -1,8 +1,8 @@
 import ThemeToggle from "./ui/theme-toggle";
-import { personalInfo } from "@/lib/data";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "./Logo";
 
 const sectionIds = [
 ] as const;
@@ -23,7 +23,7 @@ export default function GlassHeader() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          {personalInfo.name}
+          <Logo className="h-8 w-auto" />
         </motion.a>
 
         {/* Desktop Navigation */}

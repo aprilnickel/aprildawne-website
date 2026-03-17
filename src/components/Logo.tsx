@@ -1,0 +1,72 @@
+export default function Logo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      role="img"
+      width="495.99991"
+      height="280.04919"
+      viewBox="0 0 115.90061 65.43927"
+      version="1.1"
+      id="svg1"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <defs id="defs1">
+        <linearGradient id="linearGradient21">
+          <stop offset="0.49580714" stop-color="var(--logo-gradient-start, #9966ff)" stop-opacity="1" />
+          <stop offset="0.75" stop-color="var(--logo-gradient-end, #000000)" stop-opacity="1" />
+        </linearGradient>
+        <linearGradient id="linearGradient16">
+          <stop offset="0.40251574" stop-color="var(--logo-gradient-start, #9966ff)" stop-opacity="1" />
+          <stop offset="0.59958065" stop-color="var(--logo-gradient-end, #000000)" stop-opacity="1" />
+        </linearGradient>
+        <linearGradient
+            xlinkHref="#linearGradient16"
+            id="linearGradient17"
+            x1="59.819679"
+            y1="32.144814"
+            x2="59.819679"
+            y2="147.11076"
+            gradientUnits="userSpaceOnUse" />
+        <linearGradient
+          xlinkHref="#linearGradient21"
+          id="linearGradient22"
+          x1="59.819675"
+          y1="1.8693365"
+          x2="59.819675"
+          y2="117.77002"
+          gradientUnits="userSpaceOnUse" />
+      </defs>
+      <g id="layer1" transform="translate(-1.8693744,-27.101889)">
+        <path
+          d="M 38.164679,77.733671 H 28.020617 V 67.517665 H 12.768552 V 77.733671 H 2.3367155 V 52.121712 H 7.2288873 V 47.01371 H 12.408834 V 41.905707 H 27.87673 v 4.892171 h 5.179947 v 5.108003 h 5.108002 z M 27.87673,62.265775 V 51.905881 H 22.768727 V 47.01371 h -5.25189 v 5.179946 h -4.892172 v 10.072119 z m 49.856931,5.179946 h -4.892172 v 5.108003 h -5.108003 v 5.179947 H 41.905697 V 41.905707 h 25.540014 v 4.892171 h 5.179947 v 5.108003 h 5.108003 z m -10.28795,0 V 51.905881 H 62.337708 V 47.01371 H 52.193646 v 25.540014 h 10.359893 v -5.108003 z m 49.856929,10.28795 h -10.14406 v -4.892172 h -5.108 v -5.179947 h -5.108006 v -5.25189 H 91.906515 V 77.733671 H 81.474678 V 41.905707 H 91.61874 v 4.892171 h 5.179946 v 5.108003 h 5.108004 v 5.251891 h 5.03606 V 41.905707 h 10.35989 z"
+          id="text1"
+          fill="url(#linearGradient22)"
+          fill-opacity="1"
+          opacity="1"
+          stroke="var(--logo-gradient-end, #000000)"
+          stroke-width="0.934682"
+          stroke-dasharray="none"
+          aria-label="ADN" />
+        <path
+          id="rect6"
+          fill="var(--logo-gradient-start, #9966ff)"
+          fill-opacity="1"
+          opacity="1"
+          stroke="var(--logo-gradient-end, #000000)"
+          stroke-width="0.934682"
+          stroke-dasharray="none"
+          d="M 2.4394996,27.569229 H 117.19986 v 4.892068 H 2.4394996 Z" />
+        <path
+          id="rect7"
+          fill="url(#linearGradient17)"
+          fill-opacity="1"
+          opacity="1"
+          stroke="var(--logo-gradient-end, #000000)"
+          stroke-width="0.934682"
+          stroke-dasharray="none"
+          d="M 2.4394996,87.181747 H 117.19986 v 4.892068 H 2.4394996 Z" />
+      </g>
+    </svg>
+  );
+}

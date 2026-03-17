@@ -1,0 +1,6 @@
+services:
+  app:
+    image: ghcr.io/aprilnickel/aprildawne-website:latest
+    restart: unless-stopped
+    ports:
+      - "4321:80"
